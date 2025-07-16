@@ -47,7 +47,7 @@ Features a stylish anime-themed UI with animated GIFs for an engaging user exper
 ---
 
 ## 📌 Connect with Me  
-[![GitHub](https://img.shields.io/badge/GitHub-KripaSharma09-black?style=for-the-badge&logo=github)](https://github.com/KripaSharma09)  
+[![GitHub](https://img.shields.io/badge/GitHub-KripaSharma09-black?style=for-the-badge&logo=github)](https://github.com/kripa-sharma09)  
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-KripaSharma09-blue?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/kripa-sharma-m09092/)  
 
 ---
