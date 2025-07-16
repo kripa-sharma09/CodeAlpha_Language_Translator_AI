@@ -1,4 +1,16 @@
-# 🌸 AI Language Translator with Speech 🌸  
+# 🪄 AI Language Translator with Speech 🪄 
+
+<img src="https://github.com/kripa-sharma09/kripa-sharma09/blob/main/Animated_divider.gif?raw=true" alt="Animated Divider" />
+<p align="left">
+  <b>🚀 Live App Demo</b><br><br>
+  <a href="https://kripa-sharma09-codealpha-language-translator-ai-app-rcwk6e.streamlit.app/">
+    <img src="https://img.shields.io/badge/Live%20App-Streamlit-brightgreen?style=for-the-badge&logo=streamlit" alt="Live App Badge">
+  </a>
+</p>
+<img src="https://github.com/kripa-sharma09/kripa-sharma09/blob/main/Animated_divider.gif?raw=true" alt="Animated Divider" />
+---
+
+
 
 ![GitHub Repo Size](https://img.shields.io/github/repo-size/kripa-sharma09/CodeAlpha_Language_Translator_AI?style=for-the-badge)  
 ![GitHub Last Commit](https://img.shields.io/github/last-commit/kripa-sharma09/CodeAlpha_Language_Translator_AI?style=for-the-badge)  
@@ -7,7 +19,7 @@
 ---
 
 ## ✨ Project Overview  
-A cute & powerful AI-based *Language Translator Tool with Speech Output*, built with Python, Streamlit, and Google Translate API.  
+A cute & powerful AI-based **Language Translator Tool with Speech Output**, built with Python, Streamlit, and Google Translate API.  
 Features a stylish anime-themed UI with animated GIFs for an engaging user experience!  
 
 ---
@@ -24,7 +36,7 @@ Features a stylish anime-themed UI with animated GIFs for an engaging user exper
 ## 🛠 Tech Stack  
 - Python  
 - Streamlit  
-- Googletrans  
+- deep-translator 
 - gTTS (Google Text-to-Speech)  
 
 ---
