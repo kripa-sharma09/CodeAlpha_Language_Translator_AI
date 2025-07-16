@@ -1,6 +1,6 @@
-import streamlit as st
-from googletrans import Translator
+from deep_translator import GoogleTranslator
 from gtts import gTTS
+import streamlit as st
 import base64
 
 st.set_page_config(page_title="🌸 AI Translator", page_icon="🌸", layout="centered")
@@ -54,27 +54,33 @@ st.markdown("""
 st.markdown("<h1>🪄AI Language Translator🪄</h1>", unsafe_allow_html=True)
 st.write("✨ Translate with cuteness overload! ✨")
 
-translator = Translator()
 
+# ✅ These inputs MUST come first:
 text_input = st.text_area("💬 Enter text to translate")
-src_lang = st.text_input("🔤 Source Language (e.g., 'en' for English)", value='en')
-dest_lang = st.text_input("🌏 Target Language (e.g., 'ja' for Japanese)", value='ja')
+src_lang = st.text_input("🔤 Source Language (e.g., 'en')", value='en')
+dest_lang = st.text_input("🌏 Target Language (e.g., 'fr')", value='fr')
 
+# ✅ Then your Translate button:
 if st.button("✨ Translate Now ✨"):
     if text_input:
-        translated = translator.translate(text_input, src=src_lang, dest=dest_lang)
-        st.success(f"🌟 Translated Text: {translated.text}")
+        try:
+            translated_text = GoogleTranslator(source=src_lang, target=dest_lang).translate(text_input)
+            st.success(f"🌟 Translated Text: {translated_text}")
 
-        # Text to Speech
-        tts = gTTS(translated.text, lang=dest_lang)
-        tts.save("anime_translated.mp3")
-        audio_file = open("anime_translated.mp3", "rb")
-        audio_bytes = audio_file.read()
-        st.audio(audio_bytes, format="audio/mp3")
+            # Text-to-Speech
+            tts = gTTS(translated_text, lang=dest_lang)
+            tts.save("translated.mp3")
 
-        # Download Link
-        b64 = base64.b64encode(audio_bytes).decode()
-        href = f'<a href="data:audio/mp3;base64,{b64}" download="anime_translated.mp3">💾 Download Audio</a>'
-        st.markdown(href, unsafe_allow_html=True)
+            # Listen & Download
+            with open("translated.mp3", "rb") as audio_file:
+                audio_bytes = audio_file.read()
+                st.audio(audio_bytes, format="audio/mp3")
+
+                b64 = base64.b64encode(audio_bytes).decode()
+                href = f'<a href="data:audio/mp3;base64,{b64}" download="translated.mp3">💾 Download Translated Audio</a>'
+                st.markdown(href, unsafe_allow_html=True)
+
+        except Exception as e:
+            st.error(f"⚠ Error: {e}")
     else:
         st.error("⚠ Please enter text to translate!")
