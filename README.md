@@ -31,7 +31,7 @@ Features a stylish anime-themed UI with animated GIFs for an engaging user exper
 
 ## 📸 Demo Screenshot  
 
-![App Demo](assets/black_cat.gif)  
+![App Demo](assets/app_screenshot.png)  
 
 ---
 
