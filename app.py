@@ -52,7 +52,13 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 st.markdown("<h1>🪄AI Language Translator🪄</h1>", unsafe_allow_html=True)
-st.write("✨ Translate with cuteness overload! ✨")
+st.markdown("""
+<div style='text-align: center;'>
+    <p style='font-size:18px; color: white;'>❤ Not just AI — it’s <b>Kripa’s heart</b> in every word ✨</p>
+    <img src='https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExbXZoNmx6ZHA1MzRoanI1b2w4ODR5czJ3Z3M3N3N4bXRhMjNpM29sZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/4dJRDQSbjFigYkbEe0/giphy.gif' width='50'>
+</div>
+""", unsafe_allow_html=True)
+#st.write("Not Just AI -- it's Kripa's heart in every word ")
 
 
 # ✅ These inputs MUST come first:
@@ -84,3 +90,11 @@ if st.button("✨ Translate Now ✨"):
             st.error(f"⚠ Error: {e}")
     else:
         st.error("⚠ Please enter text to translate!")
+
+st.markdown("""
+---
+<p style='text-align: center; color: white;'>
+Made with ❤ by <b>Kripa Sharma</b> — CodeAlpha AI Internship
+</p>
+""", unsafe_allow_html=True)
+st.markdown("<h4 style='text-align: center; color: white;'>By Kripa Sharma ✨</h4>", unsafe_allow_html=True)
