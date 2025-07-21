@@ -94,7 +94,7 @@ if st.button("✨ Translate Now ✨"):
 st.markdown("""
 ---
 <p style='text-align: center; color: white;'>
-Made with ❤ by <b>Kripa Sharma</b> — CodeAlpha AI Internship
+Made with ❤ by <b>Kripa Sharma</b> 
 </p>
 """, unsafe_allow_html=True)
-st.markdown("<h4 style='text-align: center; color: white;'>By Kripa Sharma ✨</h4>", unsafe_allow_html=True)
+st.markdown("<h4 style='text-align: center; color: white;'>Thank you 🫶🏻</h4>", unsafe_allow_html=True)
