@@ -43,7 +43,7 @@ Features a stylish anime-themed UI with animated GIFs for an engaging user exper
 
 ## 📸 Demo Screenshot  
 
-![App Demo](assets/app_screenshot.png)  
+![App Demo](assets/demo.jpg)  
 
 ---
 
